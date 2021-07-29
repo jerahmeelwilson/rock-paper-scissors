@@ -53,9 +53,51 @@ function playRound(playerSelection, computerSelection) {
         return "You Lose! " + computerSelection + " beats " + playerSelection;
     } else {
         // If no conditions match it is a tie
-        return "Its a Tie!" + " you both selected " + computerSelection + " " + playerSelection;
+        return "Its a Tie!" + " you both selected " + computerSelection;
     }
 }
 
+//winner function if score 3, winning best of 5
+function winner(score) {
+    return score === 3
+}
 
+// game function plays a best of version of rock, paper, scissors, the game will track scores of player and computer and once a player reachs 3 the game will end they will win.
+function game() {
+    //Boths player start with zero
+    let playerScore = 0;
+    let computerScore = 0;
+    //log initial scores to console
+    console.log("Your Score: " + playerScore);
+    console.log("Computer Score: " + computerScore);
+    console.log("");
+    //play until some reaches a score of 3
+    while (computerScore < 3 && playerScore < 3) {
+        //play a game of rock,paper, scissors
+        let result = playRound(selection(), computerPlay());
+        //if players wins incremment player score
+        if (result.slice(0, 8) === "You Win!") {
+            playerScore++;
+            console.log(result);
+            //if player loses increment computer score
+        } else if (result.slice(0, 8) === "You Lose") {
+            computerScore++;
+            console.log(result);
+            //if tie, do nothing
+        } else {
+            console.log(result);
+        }
+        //log results of round to console.
+        console.log("Your Score: " + playerScore);
+        console.log("Computer Score: " + computerScore);
+        console.log("");
+    }
+    //use winner function to check for a winner
+    if (winner(playerScore)) {
+        console.log("You Win!");
+    } else {
+        console.log("You Lose!");
+    }
+}
+game();
 
