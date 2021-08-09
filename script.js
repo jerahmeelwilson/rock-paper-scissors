@@ -18,11 +18,6 @@ function computerPlay() {
 }
 
 
-//winner function if score 3, winning best of 5
-function winner(score) {
-    return score === 5
-}
-
 //playRound functions takes the user input and plays a round of rock, paper, scissors with computer
 function playRound(playerSelection, computerSelection) {
     //If players enter rock check againts computer selection and return result
