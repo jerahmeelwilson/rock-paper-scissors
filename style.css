@@ -111,3 +111,7 @@ h2{
     width: 20%;
     margin: 1em;
 }
+
+.invisible{
+    display:none;
+}

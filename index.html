@@ -8,8 +8,6 @@
     <title>Rock Paper Scissors!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/player-rock.jpeg">
-    <script src="script.js">
-    </script>
 </head>
 
 <body>
@@ -18,30 +16,33 @@
     <section class="board">
         <div class='sidebar' id='player-selection'>
             <p>Player Selection</p>
-            <img src="images/player-rock.jpeg">
+            <img class="player-choice" src="images/placeholder.jpg">
         </div>
         <div class='scoreboard'>
             <h3>Score</h3>
             <div>
-                <span id="player-score">0</span>
+                <span class="score" id="player-score">0</span>
                 <span>:</span>
-                <span id="computer-score">0</span>
+                <span class="score" id="computer-score">0</span>
             </div>
         </div>
         <div class='sidebar' id='computer-selection'>
             <p>Computer Selection</p>
-            <img src="images/player-rock.jpeg">
+            <img class="computer-choice" src="images/placeholder.jpg">
         </div>
     </section>
     <section class="result">
-        <p>You lose! Rocks Beats Paper!</p>
+        <p></p>
     </section>
     <section class="player-selection">
-        <input id="rock-select" name="rock-select" class="selection" type="image" src="images/player-rock.jpeg" />
-        <input id="paper-select" name="paper-select" class="selection" type="image" src="images/player-paper.jpeg" />
-        <input id="scissor-select" name="scissor-select" class="selection" type="image"
+        <input id="rock-select" name="player-rock" class="selection" type="image" src="images/player-rock.jpeg" />
+        <input id="paper-select" name="player-paper" class="selection" type="image" src="images/player-paper.jpeg" />
+        <input id="scissor-select" name="player-scissor" class="selection" type="image"
             src="images/player-scissor.jpeg" />
     </section>
+
 </body>
+<script src="script.js">
+</script>
 
 </html>
