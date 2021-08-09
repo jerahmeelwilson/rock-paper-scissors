@@ -49,3 +49,65 @@ table {
 
 /* END OF RESET SQL */
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+h2{
+    font-size: 1.4em;
+    margin: 1em;
+}
+
+.board{
+    display:flex;
+    border: 1px solid black;
+    width: 90%;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.board img{
+        width: 20%;
+        margin: 1em;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.sidebar p{
+    margin: 1em;
+}
+
+.scoreboard{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.scoreboard h3{
+    margin-bottom: 1.35em;
+    font-size: 1.35em
+}
+
+.result{
+    margin: 2em;
+}
+
+.player-selection{
+    display: flex;
+    justify-content: space-between;
+}
+.selection{
+    width: 20%;
+    margin: 1em;
+}
