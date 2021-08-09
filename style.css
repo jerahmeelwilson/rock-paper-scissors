@@ -66,10 +66,9 @@ h2{
 
 .board{
     display:flex;
-    border: 1px solid black;
     width: 90%;
     flex-direction: column;
-    height: 15vh;
+    height: 20vh;
     justify-content: space-between;
 }
 
@@ -112,6 +111,40 @@ h2{
     margin: 1em;
 }
 
+
 .invisible{
     display:none;
+}
+
+@media only screen and (min-width: 768px){
+    .board{
+        display:flex;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .board img{
+        width: 6em;      
+    }
+    .sidebar p{
+        margin-left: 1em;
+        font-size: 1.5em; 
+    }
+    #computer-selection {
+        flex-direction: row-reverse;
+    }
+    .scoreboard{
+        margin-top: 1em;
+    }
+
+    .selection{
+        width: 30%;
+        margin: 1em;
+    }
+    .sidebar{
+        flex-grow: 1;
+    }
+    .scoreboard{
+        flex-grow: 2;
+    }
 }
