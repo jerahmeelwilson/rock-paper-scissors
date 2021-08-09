@@ -19,7 +19,6 @@ function selection() {
     let selected = false;
     while (selected === false) {
         // prompt user for input
-        let playerSelection = prompt("Rock, Paper, or Scissors?").toLocaleLowerCase();
         //checks user input for rock paper or scissors, and returns matched result
         if (playerSelection === "rock") {
             return "Rock";
@@ -68,9 +67,6 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
     //log initial scores to console
-    console.log("Your Score: " + playerScore);
-    console.log("Computer Score: " + computerScore);
-    console.log("");
     //play until some reaches a score of 3
     while (computerScore < 3 && playerScore < 3) {
         //play a game of rock,paper, scissors
@@ -101,3 +97,6 @@ function game() {
 }
 game();
 
+console.log("Your Score: " + playerScore);
+console.log("Computer Score: " + computerScore);
+console.log("");
