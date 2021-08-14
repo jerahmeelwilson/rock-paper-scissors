@@ -6,11 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/player-rock.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>Rock, Paper, Scissors!</header>
+    <h2>First player to score 5 points wins</h2>
+    <section class="board">
+        <div class='sidebar' id='player-selection'>
+            <p>Player</p>
+            <img class="player-choice" src="images/placeholder.jpg">
+        </div>
+        <div class='scoreboard'>
+            <h3>Score</h3>
+            <div>
+                <span class="score" id="player-score">0</span>
+                <span>:</span>
+                <span class="score" id="computer-score">0</span>
+            </div>
+        </div>
+        <div class='sidebar' id='computer-selection'>
+            <p>Computer</p>
+            <img class="computer-choice" src="images/placeholder.jpg">
+        </div>
+    </section>
+    <section class="result">
+        <p></p>
+    </section>
+    <section class="player-selection">
+        <input id="rock-select" name="player-rock" class="selection" type="image" src="images/player-rock.jpeg" />
+        <input id="paper-select" name="player-paper" class="selection" type="image" src="images/player-paper.jpeg" />
+        <input id="scissor-select" name="player-scissor" class="selection" type="image"
+            src="images/player-scissor.jpeg" />
+    </section>
 
 </body>
+<script src="script.js">
+</script>
 
 </html>
