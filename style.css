@@ -68,7 +68,7 @@ h2{
     display:flex;
     width: 90%;
     flex-direction: column;
-    height: 20vh;
+    height: 20%;
     justify-content: space-between;
 }
 
