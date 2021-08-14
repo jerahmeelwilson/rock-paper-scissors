@@ -71,14 +71,20 @@ function game(result) {
     const computerSpan = document.getElementById("computer-score");
     let playerScore = playerSpan.innerText;
     let computerScore = computerSpan.innerText;
+    const playerPick = document.getElementsByClassName("player-choice");
+    const computerPick = document.getElementsByClassName("computer-choice");
     if (result.slice(0, 8) === "You Win!") {
         playerScore++;
         playerSpan.innerText = playerScore;
         console.log(result);
+        playerPick[0].classList.add("greenBorder");
+        computerPick[0].classList.add("redBorder");
         //if player loses increment computer score
     } else if (result.slice(0, 8) === "You Lose") {
         computerScore++;
         computerSpan.innerText = computerScore;
+        playerPick[0].classList.add("redBorder");
+        computerPick[0].classList.add("greenBorder");
         console.log(result);
         //if tie, do nothing
     } else {

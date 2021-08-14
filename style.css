@@ -49,10 +49,16 @@ table {
 
 /* END OF RESET SQL */
 
+html{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
 }
 
 header{
@@ -70,11 +76,15 @@ h2{
     flex-direction: column;
     height: 20%;
     justify-content: space-between;
+    
+    
 }
 
 .board img{
         width: 20%;
         margin: 1em;
+        border: 0.5em solid white;
+        border-radius: 50%;            
 }
 
 .sidebar{
@@ -99,18 +109,48 @@ h2{
 }
 
 .result{
-    margin: 2em;
+    font-size:2.5em;
+    text-align: center;
 }
 
 .player-selection{
     display: flex;
     justify-content: space-between;
 }
+
+.player-selection input{
+    border: 0.5em solid white;
+    border-radius: 50%;
+    width: 18%;
+}
+
+
 .selection{
     width: 20%;
     margin: 1em;
 }
 
+.greenBorder{
+    animation-name: flash-green;
+    animation-duration: 1s;
+}
+
+@keyframes flash-green {
+    0%{border: 0.5em solid white !important;}
+    50%{border: 0.5em solid green !important;}
+    100%{border: 0.5em solid white !important;}
+}
+
+.greenBorder{
+    animation-name: flash-red;
+    animation-duration: 1s;
+}
+
+@keyframes flas-red {
+    0%{border: 0.5em solid white !important;}
+    50%{border: 0.5em solid red !important;}
+    100%{border: 0.5em solid white !important;}
+}
 
 .invisible{
     display:none;
